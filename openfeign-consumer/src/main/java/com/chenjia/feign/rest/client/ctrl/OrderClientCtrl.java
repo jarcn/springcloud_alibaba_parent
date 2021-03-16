@@ -7,12 +7,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.UUID;
+
 /**
  * @Author chenjia@joyveb.com
  * @Date 2021/3/12 下午6:12
  */
 @RestController
 public class OrderClientCtrl {
+
 
     @Autowired
     private OrderService orderService;
@@ -32,10 +35,18 @@ public class OrderClientCtrl {
     }
 
     @GetMapping("/orderAndPay")
-    public Object orderAndPay(@RequestParam(value = "orderId") String orderId) {
+    public Object orderAndPay(@RequestParam(value = "orderId", required = false) String orderId) {
         String order = orderService.order(orderId);
         String payOrder = payService.payOrder(orderId);
         return order + "\r\n" + payOrder;
+    }
+
+    @GetMapping("/order")
+    public Object orderAndPay() {
+        String id = UUID.randomUUID().toString().replaceAll("-", "");
+        String order = orderService.order(id);
+        System.out.println("消费者返回:" + order);
+        return order;
     }
 
 
