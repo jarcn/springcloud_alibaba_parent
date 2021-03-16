@@ -1,0 +1,6 @@
+rootProject.name = 'springcloud_alibaba_parent'
+include 'order-service'
+include 'pay-service'
+include 'openfeign-consumer'
+include 'ribbonrest-consumer'
+
