@@ -1,4 +1,4 @@
-package com.chenjia.ribbon.rest.client.common;
+package com.chenjia.feign.rest.client.common;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;

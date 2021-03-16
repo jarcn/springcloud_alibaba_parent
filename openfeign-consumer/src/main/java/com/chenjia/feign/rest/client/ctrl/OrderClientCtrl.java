@@ -1,7 +1,7 @@
-package com.chenjia.ribbon.rest.client.ctrl;
+package com.chenjia.feign.rest.client.ctrl;
 
-import com.chenjia.ribbon.rest.client.common.OrderService;
-import com.chenjia.ribbon.rest.client.common.PayService;
+import com.chenjia.feign.rest.client.common.OrderService;
+import com.chenjia.feign.rest.client.common.PayService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;

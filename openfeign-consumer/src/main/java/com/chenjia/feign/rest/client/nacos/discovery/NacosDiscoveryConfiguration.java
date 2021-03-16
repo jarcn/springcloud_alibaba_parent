@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.chenjia.ribbon.rest.client.nacos.discovery;
+package com.chenjia.feign.rest.client.nacos.discovery;
 
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.Configuration;
@@ -25,7 +25,6 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @EnableDiscoveryClient
 public class NacosDiscoveryConfiguration {
-
 
 
 }
