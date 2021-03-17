@@ -8,6 +8,7 @@ import org.springframework.web.client.RestTemplate;
 import java.util.UUID;
 
 /**
+ * 使用注解方式实现负载均衡
  * @Author chenjia@joyveb.com
  * @Date 2021/3/16 上午10:00
  */

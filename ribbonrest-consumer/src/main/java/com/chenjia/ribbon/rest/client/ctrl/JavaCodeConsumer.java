@@ -1,4 +1,3 @@
-/*
 package com.chenjia.ribbon.rest.client.ctrl;
 
 import org.slf4j.Logger;
@@ -12,13 +11,14 @@ import org.springframework.web.client.RestTemplate;
 import javax.annotation.Resource;
 import java.util.UUID;
 
-*/
 /**
+ * 使用java代码实现负载过程均衡
+ *
  * @Author chenjia@joyveb.com
  * @Date 2021/3/16 上午9:38
- *//*
+ */
 
-@RestController
+//@RestController
 public class JavaCodeConsumer {
 
     //注入 Ribbon 负载均衡器对象
@@ -56,4 +56,3 @@ public class JavaCodeConsumer {
 
 
 }
-*/
